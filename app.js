@@ -20,6 +20,6 @@ app.set("view engine", "ejs");
 connectDb(process.env.DATABASE_URL);
 
 const port = 5400;
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`App is listening at http://localhost:${port}`)
 });
