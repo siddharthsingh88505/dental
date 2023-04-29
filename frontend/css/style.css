@@ -1,0 +1,1488 @@
+/* importing font style  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+/* removing default browsers layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* creating variables */
+:root {
+  --phathalo-green: #012622;
+  --text-grey: #ece5f0;
+  --border-yellow: #e6ba62;
+  --btn-background: #ee8b0a;
+  --hero-heading-size: 45px;
+  --normal-heading-size: 40px;
+  --paragraph-color: #c9c9c9;
+  --normal-pargraph-color: #928686;
+  --sub-heading-color: #7b655d;
+  --btn-hover-color: #e2ac41;
+  --label-color: #2f2d2d;
+  --footer-link: #b4babd;
+}
+
+/* styling main full width container */
+p {
+  font-size: 16px !important;
+}
+
+.container-fluid {
+  min-width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+}
+
+.hero_section {
+  background-color: var(--phathalo-green);
+  padding: 70px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* styling header of the page */
+header {
+  padding: 10px 0;
+  z-index: 4;
+  transition: padding 0.28s, height 0.328s;
+  display: flex;
+  align-items: center;
+  transition: padding 1;
+  margin: 0;
+}
+
+.header-container {
+  background-color: var(--phathalo-green);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  transition: all 0.328s;
+  z-index: 4;
+  transition: padding 1s;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(6 71 65);
+  transition: border 0.428s;
+}
+
+#header-container {
+  position: relative;
+}
+
+.logo-image-container {
+  padding: 0;
+}
+
+.logo-image-container a {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* styling logo */
+.logo {
+  width: 60%;
+  transition: width 0.428s;
+}
+
+/*styling image on hero section*/
+.hero_image {
+  box-shadow: 30px 30px 3px #013833;
+  margin: 0 30px -30px 0;
+  border-bottom-left-radius: 25px;
+}
+
+/* styling navigation of the large screens */
+
+.navbar-lg ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+}
+
+/* styling list of large screen nav */
+.navbar-lg ul li {
+  list-style-type: none;
+}
+
+.navbar-lg ul a,
+.muted-text a {
+  text-decoration: none;
+  color: #b4babd;
+  position: relative;
+  height: 100%;
+}
+
+nav {
+  padding: 0 !important;
+}
+
+/* styling footer hr */
+.footer-hr {
+  background-color: #4b5357;
+}
+
+/* adding underling to the navigation links */
+.navbar-lg ul a::before,
+.muted-text a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--border-yellow);
+  position: absolute;
+  bottom: -5px;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+/* showing under line on hover */
+.navbar-lg ul a:hover::before,
+.muted-text a:hover::before,
+.muted-text a:hover,
+.navbar-lg ul a:hover {
+  color: #e2e7e9;
+  width: 100%;
+}
+
+.muted-text {
+  font-size: 13px !important;
+}
+
+/* styling telephone number */
+.telphone-no {
+  border-radius: 5px;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.btn a {
+  padding: 12px;
+  color: var(--phathalo-green) !important;
+  font-weight: bold;
+}
+
+.telphone-no a::before {
+  display: none;
+}
+
+/* adding background to the telephone number */
+.btn::before {
+  content: "";
+  background-color: var(--btn-hover-color);
+  width: 0;
+  height: 140%;
+  transform: skew(45deg);
+  position: absolute;
+  left: -30px;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  transition: width 0.7s;
+  z-index: -1;
+}
+
+.btn:hover {
+  background-color: var(--btn-background);
+}
+
+.btn:hover::before {
+  width: 340px;
+}
+
+/* styling toogle btn */
+.toggle-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+
+.hamburger {
+  background-color: inherit;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  transition: transform 0.5s, opacity 0.25s;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.toggle-ul {
+  list-style: none;
+}
+
+.toggle-ul li {
+  padding: 0 15px;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 18px;
+}
+
+.toggle-ul li:last-child {
+  border: none;
+}
+
+.toggle-ul li:hover,
+.toggle-ul li:hover a {
+  background-color: #d7e5ed;
+  color: var(--phathalo-green);
+}
+
+.toggle-ul li a {
+  text-decoration: none;
+  color: var(--text-grey);
+  width: 100%;
+  display: block;
+  height: 70px;
+  padding: 20px 0;
+}
+
+.toogle-link-container {
+  background-color: inherit;
+  width: 100vw;
+  position: absolute;
+  top: 100%;
+  display: none;
+  justify-content: center;
+  overflow: hidden;
+  height: fit-content;
+}
+
+/* styling typography section*/
+h1,
+.hero_subtext,
+div {
+  color: var(--text-grey);
+}
+
+.hero_heading {
+  font-weight: 600;
+  font-size: var(--hero-heading-size);
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* attaching border to all the buttons */
+.btn {
+  border-radius: 5px;
+  background-color: var(--btn-background);
+  color: var(--phathalo-green);
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* styling intro section */
+.intro {
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  padding: 0;
+}
+
+.hero-section-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* adding color to subheading */
+.timing {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-heading {
+  color: #3fbcd3;
+}
+
+.location {
+  color: #242323b0 !important;
+}
+
+.time {
+  color: #110f0fb0 !important;
+}
+
+/* styling about section of home page */
+.home_about_section {
+  background-color: rgb(245, 245, 245);
+  padding: 70px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btns .muted-btn {
+  margin-left: 15px;
+}
+
+/* styling heading of the home about section */
+.normal_heading {
+  font-size: var(--normal-heading-size);
+  padding: 0 15px 30px 15px;
+  color: black;
+  font-weight: 800;
+}
+
+/* styling main doctor image on home page */
+.home_image {
+  padding-left: 0;
+  box-shadow: -30px 30px 3px #ececec;
+  margin-left: 30px;
+  padding-left: 0;
+  border-bottom-right-radius: 25px;
+}
+
+/* styling experience year of doctor on home page */
+.home_dr_experience {
+  color: var(--phathalo-green);
+  font-size: var(--hero-heading-size);
+}
+
+h3,
+h5 {
+  color: black;
+}
+
+.read_more_btn,
+.call_now_btn {
+  background-color: inherit;
+  margin-left: 17px;
+}
+
+.btn a {
+  color: var(--phathalo-green);
+  text-decoration: none;
+}
+
+/* styling process section */
+.home_process_section {
+  background-color: #f1f1f1;
+  padding: 70px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home_about_subtext {
+  color: #3b3232;
+  font-weight: 500;
+}
+
+/* styling process card container */
+.process_card_container {
+  gap: 10px;
+  padding: 0 15px;
+}
+
+/* styling process card */
+.process_card {
+  background-color: #e4ecf1;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.row {
+  margin-left: 0;
+}
+
+/* styling cards */
+.icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon {
+  filter: grayscale(1);
+  padding: 15px;
+}
+
+.process_subtext {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+
+.process_card:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.process_card:nth-child(odd) {
+  background-color: #ece5f0;
+}
+
+.process_name {
+  color: #0d5c63;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* adding hover effects to the process card */
+.process_card:hover {
+  box-shadow: 0 0 1px #6f6969;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.step {
+  color: rgb(103, 91, 91);
+  font-size: 24px;
+  align-self: flex-start;
+  background-color: rgb(250, 249, 249);
+  padding: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: inset 0 0 30px grey;
+}
+
+/* styling services section */
+.home_services_section {
+  padding: 70px 0;
+  background-color: var(--phathalo-green);
+  display: flex;
+  justify-content: center;
+}
+
+/* styling tools image of the sevices section */
+.dentist_tools_image {
+  box-shadow: -30px 30px 3px #596766;
+  border-bottom-right-radius: 25px;
+  margin-left: 25px;
+}
+
+.services_heading {
+  color: wheat !important;
+}
+
+.services_subtext {
+  color: white;
+}
+
+/* styling services container */
+.services ul {
+  padding: 30px 0;
+}
+
+.services li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 20px;
+  width: fit-content;
+}
+
+.services li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.services ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: orangered;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  border-radius: 50%;
+}
+
+/* adding hover effect on list of the services on home page */
+.services ul li:hover::before {
+  background-color: var(--btn-hover-color);
+}
+
+.services ul a:hover {
+  color: var(--btn-hover-color);
+}
+
+/* styling appointment form */
+form {
+  padding: 25px 20px !important;
+}
+
+.book {
+  margin-top: 15px;
+}
+
+.home_appointment-form {
+  background-color: #f1f1f1;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  border-radius: 0.25rem;
+}
+
+/* removing bootstrap effects */
+.container {
+  padding: auto;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+#phone_no {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.col-6 {
+  padding-left: 0;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+label {
+  color: var(--label-color);
+}
+
+.cta_text h2 {
+  color: var(--phathalo-green);
+  font-weight: 600;
+}
+
+.cta_text {
+  padding-right: 40px;
+}
+
+#appointment_span {
+  color: var(--btn-background);
+  padding-bottom: 10px;
+  text-decoration-color: rgb(30 234 242);
+}
+
+/* styling form */
+form {
+  background: linear-gradient(to bottom right, #eae6e6, #e2ece2);
+  border-radius: 6px;
+}
+
+/* styling the placholder of input fields */
+.form-control::placeholder,
+input[type="time"]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--label-color);
+  color: #c2c2c2;
+  /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--label-color);
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--label-color);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.note {
+  padding: 0 0 15px 0 !important;
+  color: var(--label-color) !important;
+  font-size: 20px !important;
+}
+
+/* styling timing in form container */
+.home_appointment-form .sub-heading {
+  color: var(--phathalo-green);
+}
+
+.home_appointment-form p {
+  color: rgb(224, 215, 196);
+}
+
+/* styling footer */
+.footer {
+  background-color: #1f282c;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul:first-child {
+  padding: 15px 0 0 0;
+}
+
+.footer ul:last-child {
+  padding-top: 0;
+}
+
+.footer div {
+  font-size: 1rem;
+  color: #b4babd;
+  line-height: 1.5;
+  height: fit-content;
+}
+
+/* styling footer subtext */
+.footer_subtext {
+  padding: 15px 0 0 0;
+}
+
+.footer_services li a {
+  color: #b4babd;
+}
+
+/* styling pages link on footer */
+.site_links {
+  padding-left: 0;
+}
+
+.site_links ul {
+  display: flex;
+  gap: 15px;
+}
+
+.site_links ul li {
+  list-style-type: none;
+}
+
+.site_links ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_headings {
+  color: white;
+  font-size: 20px;
+  padding: 0;
+}
+
+.footer .logo {
+  width: 60%;
+}
+
+.site_links {
+  padding-left: 15px;
+}
+
+.home_clinic_name {
+  color: white;
+  font-size: 20px;
+}
+
+.footer-links {
+  height: 70px;
+}
+
+.footer-links div {
+  font-size: 13px;
+}
+
+/* styling phone number and gmail in the footer */
+.footer_cotact_details {
+  padding: 20px 0;
+  margin: 0;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+}
+
+.footer_cotact_details li {
+  list-style-type: none;
+  margin-bottom: 4px;
+}
+
+.footer_cotact_details li a {
+  color: var(--footer-link);
+  text-decoration: none;
+}
+
+.social_icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social_icons li {
+  list-style-type: none;
+}
+
+.social_icons li a {
+  text-decoration: none;
+  color: var(--footer-link);
+}
+
+.social_icons li a:hover {
+  color: var(--btn-hover-color);
+}
+
+/* styling contact details inside clinic section */
+.clinic .footer_cotact_details,
+.clinic .footer_cotact_details li {
+  padding-top: 0;
+  margin: 0;
+}
+
+.footer_services_section .services ul {
+  margin: 0;
+}
+
+/* styling timing section */
+.sub-heading {
+  margin-top: 20px;
+}
+
+.clinic-timing {
+  display: flex;
+  padding: 0 0 30px 0;
+}
+
+.clinic-timing div {
+  padding: 15px;
+  background-color: #e6e1e1;
+}
+
+.clinic_name {
+  color: rgb(56 52 52);
+  font-size: 28px;
+}
+
+.clinic-time:nth-child(even) {
+  background-color: #e6e1e1;
+}
+
+.clinic-time:nth-child(odd) {
+  background-color: #d7d3d9;
+}
+
+.clinic_address {
+  padding: 5px 0px;
+}
+
+.muted-btn {
+  border: 1px solid var(--border-yellow);
+  background-color: inherit;
+}
+
+/* removing padding of add the div element inside the row container */
+.row .col {
+  padding: 0;
+}
+
+/* styling error text */
+p {
+  font-size: 18px;
+}
+
+.error {
+  font-size: 16px !important;
+  visibility: hidden;
+  height: 16px;
+  display: block;
+}
+
+.star {
+  color: rgb(136, 30, 30);
+}
+
+.well {
+  color: #012622;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 40px 0;
+  border-radius: 8px;
+}
+
+.well h2 {
+  text-align: center;
+}
+
+.call_container {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+}
+
+.call_now_btn {
+  border: 1px solid var(--border-yellow);
+}
+
+.change_bg {
+  background-color: rgb(4 32 0) !important;
+}
+
+h2 {
+  color: var(--phathalo-green) !important;
+}
+
+/* styling reviews section */
+.home_reviews_section {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.review {
+  border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0;
+}
+
+.review_container::-webkit-scrollbar {
+  display: none;
+}
+
+.odd {
+  background-color: #f2f9fd;
+}
+
+.even {
+  background-color: rgb(255, 242, 232);
+}
+
+.review_img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -13%;
+  left: 40%;
+  z-index: 3;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.review_img img {
+  border-radius: 50%;
+}
+
+.fa-user {
+  font-size: 40px;
+}
+
+.review_subtext {
+  text-align: center;
+  color: #333;
+  position: relative;
+  min-height: 300px;
+  border-radius: 12px;
+}
+
+.review_subtext {
+  padding: 80px;
+  margin: 30px 0;
+  text-align: left;
+  font-size: 17px;
+}
+
+.review_rating,
+.patient_name {
+  align-self: flex-start;
+  color: var(--label-color);
+  padding-top: 12px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  margin: initial !important;
+  padding: initial !important;
+  width: 100% !important;
+  perspective: 0px !important;
+}
+
+.carousel-item .container,
+.carousel-inner {
+  padding-left: 0;
+  user-select: none;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.review {
+  width: initial !important;
+}
+
+.carousel-inner {
+  width: 80%;
+}
+
+/* changing caroousel control style */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+  width: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: fit-content;
+  width: fit-content;
+  top: 50%;
+  z-index: 3;
+}
+
+.fa-arrow-right-long,
+.fa-arrow-left-long {
+  color: var(--phathalo-green);
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+/* brand-icn styling */
+.fa-brands {
+  font-size: 1.2rem;
+}
+
+.p-20 {
+  padding-left: 20px !important;
+}
+
+.col-7 {
+  padding-left: 0;
+}
+
+/* styling breadcrumb for all the pages */
+.breadcrumb {
+  background-color: inherit;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.carousel-control-next-icon {
+  background: none !important;
+
+
+}
+
+.active a {
+  color: grey !important;
+}
+
+.clinic {
+  padding: 0;
+}
+
+form .row {
+  padding: 0;
+}
+
+.footer_logo {
+  margin-left: -15px;
+}
+
+@media (max-width: 1300px) {
+  .intro {
+    padding: 40px 0;
+  }
+
+  .footer div {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+
+  .fa-brands {
+    font-size: 1rem;
+  }
+}
+
+/* styling for large screens  */
+@media (max-width:1200px) {
+
+  /* styling hero section image */
+  .intro {
+    position: relative;
+  }
+
+  .hero-section-image {
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 80px;
+    right: 0;
+  }
+
+  /* styling about section of home page */
+  .home_about_img {
+    padding-left: 0;
+  }
+
+  /* styling about div */
+  .about-div {
+    padding-left: 40px;
+  }
+
+  /* styling the reviews */
+  .review_subtext {
+    padding: 60px 30px;
+  }
+
+  .hero_image {
+    width: 370px;
+    height: 304px;
+    position: relative;
+    top: 0;
+  }
+}
+
+/* styling for medium screens */
+@media (max-width:992px) {
+
+  /* styling logo */
+  .logo {
+    width: 96%;
+  }
+
+  /* styling hero section */
+  .hero_image {
+    width: 270px;
+    height: 264px;
+    position: relative;
+    top: 0;
+  }
+
+  /* styling home image */
+  .home_image {
+    height: 440px;
+    width: 280px;
+  }
+
+  /* styling services image */
+  .dentist_tools_image {
+    width: 310px;
+    height: 367px;
+  }
+
+  /* styling process steps */
+  .process_card {
+    width: 47%;
+  }
+
+  .process_card_container {
+    gap: 35px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  #code {
+    padding-right: 1px;
+  }
+
+  .review_img {
+    left: 34%;
+  }
+
+  .site_links ul {
+    gap: 10px;
+  }
+
+  .cta_text h2 {
+    padding-right: 15px;
+  }
+
+  .cta_text {
+    padding-right: 30px;
+  }
+
+  .home_appointment-form .clinic-time:nth-child(odd),
+  .home_appointment-form .clinic-time:nth-child(even) {
+    background-color: inherit;
+  }
+
+  .clinic_name {
+    font-size: 22px;
+  }
+
+  .review_subtext {
+    text-align: center !important;
+  }
+}
+
+/* syling for small screens */
+@media (max-width:768px) {
+  .hero-section-image {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-div {
+    padding-left: 15px;
+  }
+
+  .hero_section {
+    margin-top: 35px;
+    padding: 50px 0;
+  }
+
+  .hero_image {
+    width: 350px;
+    height: 289px;
+  }
+
+  .hero-section-heading {
+    margin-top: 90px;
+  }
+
+  .home_image {
+    width: 350px;
+    height: 350px;
+    box-shadow: 30px 30px 3px #ececec;
+    margin-left: 30px;
+    padding-left: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0;
+  }
+
+  .home_about_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-div {
+    margin-top: 40px;
+  }
+
+  .process_card:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .process_card_container {
+    gap: 15px;
+  }
+
+  .services_section_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dentist_tools_image {
+    box-shadow: 30px 30px 3px #596766;
+    border-radius: 0;
+    border-bottom-left-radius: 25px;
+    margin: 0;
+    width: 350px;
+    height: 268px;
+  }
+
+  .services_listing {
+    margin-top: 60px;
+  }
+
+  .review_img {
+    left: 40%;
+  }
+
+  .clinic {
+    padding-right: 15px;
+    word-break: break-all;
+  }
+
+  .cta_text h2 {
+    padding-right: 15px;
+    font-size: 24px;
+  }
+
+  .cta_text,
+  .cta-form {
+    padding-right: 30px;
+  }
+
+  footer .clinic-timing {
+    margin-left: 0;
+  }
+
+  .clinic-timing {
+    margin: 0;
+  }
+
+  .well {
+    gap: 15px;
+  }
+
+  .footer_services_section,
+  .footer_clinic_section {
+    margin-top: 40px;
+  }
+
+  .home_clinic_name {
+    padding-top: 15px;
+  }
+
+  .hero-section-heading .clinic-timing {
+    width: fit-content;
+  }
+
+  .btns {
+    margin-top: 25px;
+  }
+
+  form button {
+    width: 100%;
+    margin-right: 15px;
+  }
+
+  .btn {
+    font-weight: bold;
+  }
+
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+
+  .footer-links ul {
+    padding-bottom: 0;
+  }
+}
+
+/* styling for max xs screens */
+@media (max-width:576px) {
+  .hamburger .line {
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: 8px 10px;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  .intro {
+    padding: 25px 0;
+  }
+
+  .hero_image {
+    width: 270px;
+    height: 222px;
+  }
+
+  .hero_image {
+    box-shadow: 20px 20px 3px #013833;
+    margin: 0 40px -20px 0;
+    border-bottom-left-radius: 25px;
+  }
+
+  .home_image {
+    margin: 0;
+  }
+
+  .home_image {
+    box-shadow: 20px 20px 3px #ececec;
+    margin: 0 40px -20px 0;
+  }
+
+  .dentist_tools_image {
+    box-shadow: 20px 20px 3px #596766;
+    margin: 0 40px -20px 0;
+  }
+
+  .process_card_container {
+    margin: 0;
+  }
+
+  .services_section_img {
+    display: flex;
+  }
+
+  .dentist_tools_image {
+    width: 270px;
+    height: 252px;
+  }
+
+  .home_image {
+    width: 270px;
+    height: 270px;
+  }
+
+  .hero_heading {
+    font-size: 26px;
+  }
+
+  .normal_heading {
+    font-size: 24px;
+  }
+
+  .about-div {
+    margin-top: 70px;
+    padding-left: 15px;
+  }
+
+  .process_card_container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .process_card {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .services_listing {
+    margin-top: 80px;
+  }
+
+  .review_subtext {
+    padding: auto 10px;
+  }
+
+  .review_img {
+    left: 38%;
+  }
+
+  .site_links {
+    margin: 15px 0 0 0;
+  }
+
+  .footer ul {
+    padding: 15px 0 !important;
+  }
+
+  .footer div {
+    font-size: 1rem;
+    word-break: break-all;
+  }
+
+  .fa-brands {
+    font-size: 1.1rem;
+  }
+
+  .review_img {
+    left: 33%;
+  }
+
+  .muted-text {
+    font-size: 0.9rem;
+  }
+
+  .call_heading,
+  form h2 {
+    font-size: 24px;
+  }
+
+  .footer ul:first-child {
+    padding: 15px 0 0 0 !important;
+  }
+
+  .footer ul:last-child {
+    padding: 0 0 15px 0 !important;
+  }
+
+  .toggle-nav {
+    padding: 0 15px 0 0;
+  }
+
+  .header_title {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding-bottom: 0;
+  }
+
+}
+
+@media (max-width:400px) {
+  .btns {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

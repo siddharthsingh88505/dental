@@ -1,0 +1,233 @@
+@import "style.css";
+/* styling hero section */
+.about_hero_section {
+    background-color: white ;
+    margin-top: 99px;
+}
+
+.hero_section {
+    background-color: white;
+    padding: 0 0 100px 0 !important;
+}
+
+
+.header_title {
+    font-weight: 600;
+    color: var(--phathalo-green)
+}
+
+.hero_details{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 30px;
+}
+
+
+/* styling location section */
+.location_section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f9fd81;
+    padding: 40px 15px;
+    border-radius: 6px;
+}
+.location_detail{
+    padding-left: 0;
+}
+.book{
+    font-weight: bold;
+}
+.location1{
+    padding-left: 8px;
+    border-right: 1px solid #e2f0f8;
+}
+iframe{
+    border-radius: 6px;
+}
+.location_map{
+    display: flex;
+    justify-content: flex-end;
+}
+.location{
+    /* padding: 0; */
+}
+.normal_heading{
+    padding: 0;
+}
+.header_title{
+    font-weight: 500;
+}
+.contact_details{
+    
+    margin: 50px 0;
+}
+
+.email_container{
+    background-color: rgb(248 247 246);
+    padding: 10px 25px 10px 15px ;
+    border-radius: 6px;
+}
+.phone_no_container{
+    background-color: rgb(248 247 246);
+    margin-left: 50px;
+    padding: 10px 25px 10px 15px;
+    border-radius: 6px;
+}
+.phone_no_list li,.email_list li{
+    list-style-type: none;
+}
+.phone_no_list li a,.email_list li a{
+    text-decoration: none;
+    color:#242323b0 !important
+}
+
+/* styling form element */
+form{
+    background:linear-gradient(to bottom right,#eae6e6,#e2ece2);
+    border-radius: 6px;
+}
+/* styling message box */
+textarea{
+    resize: none;
+}
+/* styling page header */
+.page_header_container {
+    padding: 100px 0px 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.page_header {
+    display: flex;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.breadcrumb,
+.breadcrumb-item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.clinic_name{
+    font-size: 24px;
+}
+
+/* styling bread_crumb */
+.header_title {
+    font-weight: bold;
+    color: var(--phathalo-green)
+}
+/* styling general mail*/
+.general_mail,.general_phone_no{
+    text-decoration: none;
+    color:#242323b0 !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+.email_title,.phone_title{
+    color: rgb(56 52 52);
+    font-size: 28px;
+}
+.contact{
+    padding:15px 18px;
+}
+.contact:nth-child(even){
+background-color: #e6e1e1;
+}
+.contact:nth-child(odd){
+    background-color: #ece5f0;
+}
+.contact_details{
+    display: flex;
+    padding: 0 0 30px 0;
+}
+a{
+    text-decoration:  none !important;
+}
+.hero_section{
+    margin-top: 0;
+}
+
+@media (max-width:1300px) {
+    .hero_section {
+        padding: 0 0 90px 0 !important ;
+    }
+}
+@media (max-width:1200px) {
+    .location_section {
+        gap: 30px;
+    }
+    
+    .location2 {
+        padding-left: 0;
+    }
+}
+@media (max-width:992px) {
+    .timing{
+        padding:0 0 30px 0;
+    }
+    .location1{
+        border: none;
+    }
+    .page_header_container {
+        padding: 100px 0px 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .location_map {
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0px;
+    }
+    .cta_text,.cta-form {
+        padding-right: 30px;
+    }
+    .cta_text h2{
+        padding-right: 15px;
+    }
+    .contact:nth-child(odd),.contact:nth-child(even){
+        background-color: inherit;
+    }
+    .clinic_name{
+        font-size: 22px;
+    }
+    .email_title,.phone_title{
+        font-size: 22px;
+    }
+}
+@media (max-width:768px) {
+    .location_map{
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0px;
+    }
+    .location_detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+    }
+    .location_map{
+        width: 100%;
+        padding-left: 0;
+    }
+    iframe{
+        width: 100%;
+    }
+    .location{
+        padding-right: 0;
+    }
+}
+@media (max-width:576px) {
+    .header_title {
+        font-size: 24px;
+    }
+    .hero_details {
+        padding: 0 15px;
+    }
+    
+}

@@ -1,0 +1,352 @@
+@import "style.css";
+/* styling hero section */
+.about_hero_section{
+    background-color: white !important;
+    margin-top: 99px;
+}
+.hero_section{
+    background-color: white;
+    padding: 0 0 100px 0 !important;
+}
+/* styling page header */
+.page_header_container{
+    padding:100px 0px 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.page_header{
+    display: flex;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 15px;
+}
+.breadcrumb,.breadcrumb-item{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+/* styling bread_crumb */
+.header_title{
+    font-weight: bold;
+    color: var(--phathalo-green)
+}
+
+/* styling image in hero section */
+.about-section-image,.stats_image_container{
+    display: flex;
+    justify-content: flex-end;
+}
+.about_hero_image{
+    margin-right: 30px;
+    box-shadow: 30px 30px 3px #edf0f573;
+    border-bottom-left-radius: 25px;
+}
+/* styling intro typography */
+.normal_heading{
+    color:var(--phathalo-green);
+    padding: 0;
+}
+.home_about_subtext{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.dr_name{
+    color: rgb(20, 57, 43);
+    padding: 10px 0 5px 0;
+    font-weight: 700;
+}
+.dr_designation{
+    color: rgb(10, 70, 50);
+    font-weight: 500;
+}
+/* styling vission section of the about page */
+.vision_section{
+    padding: 70px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.culture{
+    display: flex;
+}
+.culture_title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-right: 2px solid black;
+}
+.culture_title h2{   
+    margin: 0;
+    padding: 0;
+}
+
+.mission_vision{
+    padding: 70px 15px 0 ;
+}
+.card{
+    padding-top:30px;
+    padding-bottom: 30px;
+    box-shadow: 6px 0px 5px #96999993;
+    transform: skewY(1deg);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: skewY(-1deg) scale(1.04);
+}
+.card:nth-child(odd){
+    background-color: #f2f9fd;
+}
+.card:nth-child(even){
+    background-color: rgb(255, 242, 232);
+}
+.mission{
+    z-index: 2;
+}
+.vision{
+    z-index: 1;
+    padding-left: 30px;
+    transform: translateX(-10px) skewY(1deg);
+}
+.value{
+    z-index: 0;
+    padding-left: 35px;
+    transform: translateX(-30px) skewY(1deg);
+}
+.value-cards{
+    font-size: 36px;
+    font-weight: 500;
+}
+/* styling stats section of the about page */
+.stats_container{
+    padding: 70px 0 100px 0;
+    background-color: #edf0f573;
+    display: flex;
+    justify-content: center;
+}
+.stat{
+    height: 150px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.stat:hover {
+    background-color: inherit;
+    transform: scale(1.08);
+    transition: 0.428s;
+}
+.stat_col{
+    padding-top: 15px;
+    gap: 20px;
+    position: relative;
+}
+.counting{
+    color:rgb(6, 52, 47);
+    font-size: 28px;
+    font-weight: 600;
+}
+.counting::before{
+    content: "+";
+    font-size: 28px;
+}
+.stat_title{
+    color: #664f74;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.underline{
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    height: 5px;
+    width: 80%;
+}
+.stat1 .underline,.stat4 .underline{
+    background-color: var(--btn-background);
+}
+.stat2 .underline,.stat3 .underline{
+    background-color: var(--phathalo-green);
+}
+.stats_image{
+    margin-right: 30px;
+    box-shadow: 30px 30px 3px #d8d8de35;
+    border-bottom-left-radius: 25px;
+}
+.stat_title{
+    text-align: center;
+}
+.stats_box{
+    padding: 15px 0;
+}
+/* styling doctors team section */
+.doctors_team_section{
+    padding: 70px 0;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width:initial !important;
+    height: initial !important;
+    width: 30% !important;
+}
+.doctor6{
+    display: block;
+}
+.doctor:nth-child(odd){
+    background-color: #f2f9fd;
+}
+.doctor:nth-child(even) {
+    background-color: rgb(255, 242, 232);
+}
+.doctor_container{
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.doctor_detail{
+    padding: 15px 0;
+}
+.doctor_name{
+    color:#333;
+    padding: 15px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+.doctor_speciality,.doctor_exp{
+    color: #333;
+    font-size: 14px !important;
+    text-align: center;
+    
+}
+
+.doctor_img_container{
+    border-radius: 6px;
+    box-shadow: rgba(228, 226, 226, 0.16) 0px 1px 4px;
+}
+.doctor_img{
+    border-radius: 6px !important;
+}
+.carousel-item .container,.carousel-inner{
+    padding-left: 0;
+    user-select: none;
+}
+.carousel-control-next{
+    right: 0;
+}
+.carousel{
+    padding: 0 15px;
+}
+.sm-carousal{
+    display: none !important;
+}
+.carousel-control-prev{
+    padding: 0 15px;
+}
+@media (max-width:1300px) {
+    .hero_section {
+        padding: 0 0 90px 0 !important;
+    }
+}
+/* responsive for lg screens */
+@media (max-width:1200px) {
+    /* styling hero section of the about page */
+    .about-section-image{
+        display: flex;
+        justify-content: center;
+    }
+    .about_hero_image {
+        margin-right: 20px;
+        box-shadow: 20px 20px 3px #edf0f573;
+    }
+    .about_details{
+        margin-top: 60px;
+    }
+    .hero_section {
+        margin-top: 0;
+    }
+}
+@media (max-width:992px) {
+    .cta_text h2 {
+        padding-right: 15px;
+    }
+    
+    .cta_text{
+        padding-right: 30px;
+    }
+    .cta-form{
+        padding-right: 15px;
+    }
+}
+/* responsve for md screens */
+@media (max-width:768px) {
+    .hero_section{
+        padding-bottom: 0 !important;
+    }
+    .cta_text,
+    .cta-form {
+        padding-right: 30px;
+    }
+    .culture_title{
+        border: none;
+        margin-bottom: 0.5rem;
+    }
+    .value-cards{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .mission_vision{
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+        padding-top: 50px;
+    }
+    .card h3{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .mission,.vision,.value{
+        transform: none;
+        z-index: 1;
+    }
+    .vision,.value{
+        padding-left: 15px;
+    }
+    .card:hover{
+        transform: none;
+    }
+    .mission_vision{
+        gap:15px;
+    }
+    .lg-carousal{
+        display: none !important;
+    }
+}
+/* responsve for sm screens */
+@media (max-width:576px) {
+    /* styling hero section of the about page */
+    .header_title{
+        font-size: 24px;
+    }
+    .about_hero_image{
+        width: 270px;
+        height: 291px;
+    }
+    .hero_heading{
+        margin-bottom: 15px;
+    } 
+}

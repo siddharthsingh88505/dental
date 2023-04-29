@@ -1,0 +1,31 @@
+<%- include("./partials/loginheader")%>
+<div>  
+    <div class="global-container">  
+      <div class="card login-form">  
+      <div class="card-body">  
+          <h4 class="card-title text-center"> Admin Login </h4>  
+          <div class="card-text">  
+              <form action="/login" method="post">
+                <% if(isValid === false) { %>
+                    <div class="alert alert-danger">
+                        <strong>Oops ! Username or Password is wrong .</strong>
+                    </div>
+                    <br>
+                    <br>
+                <% } %>
+                
+                  <div class="form-group">  
+                      <label for="exampleInputEmail1"> Enter Email address </label>  
+                      <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">  
+                  </div>  
+                  <div class="form-group">  
+                      <label for="exampleInputPassword1">Enter Password </label>  
+                      <input type="password" name="password" class="form-control form-control-sm" id="exampleInputPassword1" required="required">  
+                  </div>  
+                  <button type="submit" class="btn btn-primary btn-block"> Sign in </button>  
+              </form>  
+          </div>  
+      </div>  
+  </div>  
+  </div> 
+<%- include("./partials/footer")%>

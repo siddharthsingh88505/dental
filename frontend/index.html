@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist</title>
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom-css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- fluid conatiner for header -->
+    <div class="container-fluid header-container">
+        <div class="container" id="header-container">
+            <header class="row">
+                <div class="logo-image-container col-7 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+                    <a href="index.html"><img src="img/logo_lg.png" alt="good_smile_clinic_image" class="logo"></a>
+                </div>
+                <nav class="d-none d-lg-block  col-md-7 col-lg-7 col-xl-7 navbar-lg">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="btn"><a href="#make-appointment">Make Appointment</a></li>
+                    </ul>
+                </nav>
+
+                <!-- toggle navbar -->
+                <div class="toggle-nav row col-5 col-sm-6 col-md-7">
+                    <!-- toggle button -->
+                    <button class="d-block d-sm-block d-md-block d-none d-lg-none hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+
+                </div>
+
+            </header>
+        </div>
+        <div class="toogle-link-container ">
+            <div class="container">
+                <nav>
+                    <ul class="toggle-ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the hero section -->
+    <div class="container-fluid hero_section">
+        <!-- content area of hero section -->
+        <div class="container">
+            <div class="intro row">
+                <div
+                    class="hero-section-heading col-11 col-sm-12 col-md-6 col-lg-5 col-xl-6 order-sm-2 order-md-1 order-lg-1 order-xl-1 order-2">
+                    <h1 class="hero_heading">A Better life Starts with a Beautiful Smile.</h1>
+                    <p class="hero_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero
+                        hic excepturi dolorem dicta voluptatessosor.</p>
+                    <div class="timing">
+                        <h5 class="sub-heading">Opening hours</h5>
+                        <div class="clinic-timing row">
+                            <div class="clinic-time col-12 col-md-6 col-lg-6 col-xl-5">
+                                <h3 class="clinic_name">Clinic 1</h3>
+                                <p class="clinic_address location"><i
+                                        class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Andheri</p>
+                                <p class="hero_subtext time"><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Mon-Fri: 8:00
+                                    am - 5:00 pm</p>
+                            </div>
+                            <div class="clinic-time col-12 col-md-6 col-lg-6 col-xl-5">
+                                <h3 class="clinic_name">Clinic 2</h3>
+                                <p class="clinic_address location"><i
+                                        class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Bandra</p>
+                                <p class="hero_subtext time"><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Mon-Fri: 8:00
+                                    am - 5:00 pm</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="make-appoinment btn">
+                        <a href="#make-appointment">Make Appointment</a>
+                    </div>
+
+                </div>
+                <div class="hero-section-image col-12 col-sm-12 col-md-6 col-lg-7 col-xl-6 order-sm-1 order-1">
+                    <img src="img/banner-doctors.png" alt="doctors_on_homepage" class="hero_image">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the about section -->
+    <div class="container-fluid home_about_section">
+        <!-- content area for the about section -->
+        <div class="container">
+            <h2 class="normal_heading col-11 col-sm-12 col-md-9 col-lg-7 col-xl-7">Improving The Quality of Your Life
+                Through Better Health.</h2>
+            <div class="row">
+                <div class="home_about_img col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6">
+                    <img src="img/home_doctor.jpg" alt="doctor_image" class="home_image">
+                </div>
+                <div class="about-div col-11 col-sm-12 col-md-7 col-lg-6 col-xl-5">
+                    <div>
+                        <h2 class="home_dr_experience">12+</h2>
+                        <h3>Years Of Experience</h3>
+                        <p class="home_about_subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+                            fuga molestiae voluptatem, maxime numquam ipsam unde alias rerum fugit tempora.</p>
+                        <p class="home_about_subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+                            fuga molestiae voluptatem, maxime numquam ipsam unde
+                            alias . Lorem ipsum dolor sit amet consectetur. amet consectetur adipisicing elit. Guit yutr
+                            iokg ometr aalayr ihuty molets voluptatessosor</p>
+
+                    </div>
+
+                    <div class="btns">
+                        <div class="btn services_btn">
+                            <a href="services.html">Our Services</a>
+                        </div>
+                        <div class="btn muted-btn">
+                            <a href="about.html">Read More</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the process section -->
+    <div class="container-fluid home_process_section">
+        <div class="container">
+            <h2 class="normal_heading col-11 col-sm-12 col-md-11 col-lg-7 col-xl-7">Make Schedule Easier and Simpler for
+                Patients.</h2>
+            <div class="row process_card_container">
+                <div class="process_card">
+                    <div class="step">01</div>
+                    <div class="visit_icon icon">
+                        <img src="icons/visit_icon.png" alt="visit_dentist_image">
+                    </div>
+                    <h5 class="process_name">Visit a Dentist</h5>
+                    <p class="process_subtext">Lorem ipsum dolor sit, amet consectetur adipisicing. elit. Alias, ipsa.
+                    </p>
+                </div>
+                <div class="process_card">
+                    <div class="step">02</div>
+                    <div class="visit_icon icon">
+                        <img src="icons/dignostic_icon.png" alt="dignostic_dentist_image">
+                    </div>
+                    <h5 class="process_name">Dental Diagnostics</h5>
+                    <p class="process_subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                </div>
+                <div class="process_card">
+                    <div class="step">03</div>
+                    <div class="visit_icon icon">
+                        <img src="icons/care_icon.png" alt="care_dentist_image">
+                    </div>
+                    <h5 class="process_name">Dental Care</h5>
+                    <p class="process_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+                        praesentium?</p>
+
+
+                </div>
+                <div class="process_card">
+                    <div class="step">04</div>
+                    <div class="visit_icon icon">
+                        <img src="icons/implant_icon.png" alt="dental_implant_image">
+                    </div>
+                    <h5 class="process_name">Dental Implant</h5>
+                    <p class="process_subtext">Lorem ipsum dolor sit amet.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the services -->
+    <div class="container-fluid home_services_section">
+        <div class="container">
+            <div class="row">
+                <div class="services_section_img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img src="img/tools-image.png" alt="dentist_tools_image" class="dentist_tools_image">
+
+                </div>
+                <div class="services_listing col-11 col-sm-10 col-md-6 col-lg-6 col-xl-6">
+                    <h2 class="services_heading">Perfect Treatment, Perfect Smile</h2>
+                    <p class="services_subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
+                        veritatis nisi? Rerum nihil vel illo?</p>
+                    <div class="services row">
+                        <ul class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <li><a href="services.html#teethwhitening">Teeth Whitening</a></li>
+                            <li><a href="services.html#stainedteeth">Stained Teeth</a></li>
+                            <li><a href="services.html#modernanesthesic">Modern Anesthesic</a></li>
+                            <li><a href="services.html#crookedteeth">Crooked Teeth</a></li>
+                        </ul>
+                        <ul class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <li><a href="services.html#rootcanal">Root Canal</a></li>
+                            <li><a href="services.html#stainedteeth">Stained Teeth</a></li>
+                            <li><a href="services.html#qualitybrackets">Quality Brackets</a></li>
+                            <li><a href="services.html#toothache">Toothache</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <a href="services.html">Our Services</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the reviews -->
+    <div class="container-fluid home_reviews_section">
+        <!-- yes -->
+        <div class="container">
+            <h2 class="normal_heading">Read Our Patients Reviews</h2>
+        </div>
+        <div class="container">
+            <!-- carousel for largescreen -->
+            <div id="slider" class="carousel slide " data-ride="carousel">
+                <div class="row carousel-inner col-12 d-none d-md-block">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review1 col-5">
+                                    <div class="review_subtext odd">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates .
+                                        one
+                                        <div class="review_img">
+                                            <img src="img/human1.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Rajnish Yadav</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="review review2 col-5">
+
+                                    <div class="review_subtext even">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates quas magnam
+                                        saepe beatae ea.
+                                        <div class="review_img">
+                                            <img src="img/human2.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Vikash Shah</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review3 col-5">
+                                    <div class="review_subtext odd">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates .
+                                        one
+                                        <div class="review_img">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="review_img">
+                                            <img src="img/human3.jpg" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Bibek Das</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="review review4 col-5">
+                                    <div class="review_subtext even">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates quas magnam
+                                        saepe beatae ea.
+                                        <div class="review_img">
+                                            <img src="img/human1.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Omkar Rai</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review5 col-5">
+                                    <div class="review_subtext odd">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates .
+                                        one
+                                        <div class="review_img">
+                                            <img src="img/human2.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Harsh Shah</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="review review6 col-5">
+                                    <div class="review_subtext even">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates quas magnam
+                                        saepe beatae
+                                        ea.
+                                        <div class="review_img">
+                                            <img src="img/human3.jpg" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Sony Mishra</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="#slider" class="carousel-control-prev d-none d-md-block" data-slide="prev">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+                <a href="#slider" class="carousel-control-next d-none d-md-block" data-slide="next">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+
+            </div>
+            <!-- carousel for smallscreen -->
+            <div id="slider2" class="carousel slide " data-ride="carousel">
+                <!-- carousel for small screen -->
+                <div class="row carousel-inner col-12 d-block d-none d-md-none">
+                    <div class="carousel-item col-12 active">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review1 col-10">
+                                    <div class="review_subtext odd">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates .
+                                        one
+                                        <div class="review_img">
+                                            <img src="img/human1.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Rajnish Yadav</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review2 col-10">
+
+                                    <div class="review_subtext even">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates quas magnam
+                                        saepe beatae ea.
+                                        <div class="review_img">
+                                            <img src="img/human2.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Vikash Shah</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review3 col-10">
+                                    <div class="review_subtext odd">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates .
+                                        one
+                                        <div class="review_img">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="review_img">
+                                            <img src="img/human3.jpg" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Bibek Das</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review4 col-10">
+                                    <div class="review_subtext even">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates quas magnam
+                                        saepe beatae ea.
+                                        <div class="review_img">
+                                            <img src="img/human1.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Omkar Rai</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review5 col-10">
+                                    <div class="review_subtext odd">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates .
+                                        one
+                                        <div class="review_img">
+                                            <img src="img/human2.png" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Harsh Shah</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12">
+                        <div class="container">
+                            <div class="row review_container">
+                                <div class="review review6 col-10">
+                                    <div class="review_subtext even">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. voluptates quas magnam
+                                        saepe beatae
+                                        ea.
+                                        <div class="review_img">
+                                            <img src="img/human3.jpg" alt="human icon image">
+                                        </div>
+                                        <div class="review_rating">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="patient_name">
+                                            <p><span class="dash">-</span> Sony Mishra</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="#slider2" class="carousel-control-prev d-block d-none d-md-none" data-slide="prev">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+                <a href="#slider2" class="carousel-control-next d-block d-none d-md-none" data-slide="next">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the cta -->
+    <div class="container-fluid home_appointment-form" id="make-appoinment">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12 cta_text">
+                    <h2>
+                        Patient health is the highest value in our work
+                        You can Take <span id="appointment_span">Appointment.</span>
+                    </h2>
+                    <div class="timing">
+                        <h5 class="sub-heading">Opening hours</h5>
+                        <div class="clinic-timing row">
+                            <div class="clinic-time  col-md-12 col-lg-11 col-xl-6">
+                                <h3 class="clinic_name">Clinic 1</h3>
+                                <p class="clinic_address location"><i
+                                        class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;&nbsp;Andheri</p>
+                                <p class="hero_subtext time"><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Mon-Fri: 8:00
+                                    am - 5:00 pm</p>
+                            </div>
+                            <div class="clinic-time col-lg-11 col-xl-6">
+                                <h3 class="clinic_name ">Clinic 2</h3>
+                                <p class="clinic_address location"><i
+                                        class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;&nbsp;Bandra</p>
+                                <p class="hero_subtext time"><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Mon-Fri: 8:00
+                                    am - 5:00 pm</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12  cta-form">
+                    <form action="/insert" class="col-12 p-20" id="make-appointment" method="post"
+                        onsubmit="return validateForm(event);">
+                        <p class="note">All Fields are mandatory.</p>
+                        <div class="row">
+                            <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="diagnostics">Dental Diagnostics</label>
+                                <input type="text" id="diagnostics" name="diagnostics" list="diagnostics_list"
+                                    class="form-control" placeholder="Select diagnostics">
+                                <datalist id="diagnostics_list">
+                                    <option>Teeth Whitening</option>
+                                    <option>Stained Teeth</option>
+                                    <option>Modern Anesthesic</option>
+                                    <option>Crooked Teeth</option>
+                                    <option>Root Canal</option>
+                                    <option>Quality Brackets</option>
+                                    <option>Toothache</option>
+                                </datalist>
+                                <p class="error" id="diagnostic_error">Please select diagnostic from dropdown list</p>
+                            </div>
+                            <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="doctor">Select Doctor</label>
+                                <input type="text" class="form-control" list="doctor_list" placeholder="Select doctor"
+                                    id="doctor" name="doctor">
+                                <datalist id="doctor_list">
+                                    <option>Sachin</option>
+                                    <option>Bebek</option>
+                                    <option>Vikash</option>
+                                    <option>Manish</option>
+                                    <option>Aakash</option>
+                                </datalist>
+                                <p class="error" id="doctor_error">Please select doctor from dropdown list</p>
+                            </div>
+                            <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter Name" id="name" name="name">
+                                <p class="error" id="name_error"> should be atleast 3 character without number</p>
+                            </div>
+                            <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email"
+                                    name="email">
+                                <p class="error" id="email_error"></p>
+                            </div>
+                            <div class="form-group col-12 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="phone_no">Phone:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control col-3 col-sm-5 col-md-5 col-lg-5 col-xl-5"
+                                        name="code" id="code" list="code_list" placeholder="Code">
+                                    <datalist id="code_list"></datalist>
+                                    <input type="text" class="form-control" placeholder="Enter Phone " id="phone_no"
+                                        inputmode="numeric" name="contact">
+                                    <p class="error" id="contact_error"></p>
+                                </div>
+                            </div>
+                            <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="date">Date:</label>
+                                <input type="text" class="form-control" placeholder="yyyy-mm-dd" id="date"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')" name="date">
+                                <p class="error" id="date_error">Please select a particular date</p>
+                            </div>
+                            <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label for="time">Select Time</label>
+                                <input type="text" name="time" id="time" class="form-control" placeholder="Select time"
+                                    onfocus="(this.type='time')" onblur="(this.type='text')">
+                                <p class="error" id="time_error">Please select a particular date</p>
+                            </div>
+                            <div class="col-0 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
+
+                            <button type="submit" class="btn btn_margin book" id="form_submit">Book Appointment</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- fluid container for the call option -->
+    <div class="container-fluid call_container">
+
+        <div class="container">
+            <div class="well row">
+                <h2 class="call_heading col-sm-12 col-sm-6 col-md-12 col-lg-6 col-xl-6">Need any help ? Call Now</h2>
+                <div class="btn col-7 col-sm-6 col-md-4 col-lg-3 col-xl-3"><a href="tel: +918767484648"><i
+                            class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+918767484648</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- fluid container for the footer -->
+    <div class="container-fluid footer">
+        <div class="container">
+            <footer class="row">
+                <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5 footer_logo_section">
+                    <div class="logo-image-container footer_logo">
+                        <a href="index.html"><img src="img/logo_small.png" alt="good_smile_clinic_image"
+                                class="logo"></a>
+                    </div>
+                    <div class="footer_subtext">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem officiis dolorum quod
+                        eos dignissimos vero.
+                    </div>
+
+                    <ul class="footer_cotact_details">
+                        <li><a href="tel: +918767484648"><i
+                                    class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+918767484648</a></li>
+                        <li><a href="mailto:goodsmile@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;goodsmile@innovfide.com</a></li>
+
+                    </ul>
+                    <h5 class="footer_headings">Follow us on</h5>
+                    <ul class="social_icons">
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-10 col-sm-4 col-md-4 col-lg-3 col-xl-3 footer_services_section">
+                    <h3 class="footer_headings">Our Services</h3>
+                    <div class="services row">
+                        <ul class="col-11 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <li><a href="services.html#teethwhitening">Teeth Whitening</a></li>
+                            <li><a href="services.html#stainedteeth">Stained Teeth</a></li>
+                            <li><a href="services.html#modernanesthesic">Modern Anesthesic</a></li>
+                            <li><a href="services.html#crookedteeth">Crooked Teeth</a></li>
+                        </ul>
+                        <ul class="col-11 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <li><a href="services.html#rootcanal">Root Canal</a></li>
+                            <li><a href="services.html#stainedteeth">Stained Teeth</a></li>
+                            <li><a href="services.html#qualitybrackets">Quality Brackets</a></li>
+                            <li><a href="services.html#toothache">Toothache</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-3 col-lg-4 col-xl-4 footer_clinic_section">
+                    <h3 class="footer_headings col-12">Our Clinics</h3>
+                    <div class="row">
+                        <div class="clinic clinic1 col-11 col-sm-6 col-md-12 col-lg-12 col-xl-12">
+                            <h5 class="home_clinic_name">Clinic 1</h5>
+                            <div class="clinic_address">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, totam?
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Mon-Fri: 10:00 am - 05:00 pm
+                            </div>
+                            <ul class="footer_cotact_details">
+                                <li><a href="tel:+918767484648"><i
+                                            class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+918767484648</a></li>
+                                <li><a href="mailto:goodsmile@gmail.com"><i
+                                            class="fa-solid fa-envelope"></i>&nbsp;&nbsp;goodsmile@innovfide.com</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="clinic clinic2 col-11 col-sm-6 col-md-12 col-lg-12 col-xl-12">
+                            <h5 class="home_clinic_name">Clinic 2</h5>
+                            <div class="clinic_address">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, cumque.
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Mon-Fri: 10:00 am - 05:00 pm
+                            </div>
+                            <ul class="footer_cotact_details">
+                                <li><a href="tel:+918767484648"><i
+                                            class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+918767484648</a></li>
+                                <li><a href="mailto:goodsmile@gmail.com"><i
+                                            class="fa-solid fa-envelope"></i>&nbsp;&nbsp;goodsmile@innovfide.com</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <hr class="footer-hr">
+            <div class="row footer-links">
+                <div class="muted-text col-12 col-sm-7 col-md-9 col-lg-8 col-xl-8">
+                    Copyright ©2022 Goodsmile.com <br> All Rights Reserved
+                </div>
+                <div class="site_links col-12 col-sm-5 col-md-3 col-lg-4 col-xl-4">
+                    <ul>
+                        <li class="muted-text"><a href="about.html">About</a></li>
+                        <li class="muted-text"><a href="services.html">Sevices</a></li>
+                        <li class="muted-text"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- linking all the scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+@import "style.css";
+/* styling hero section */
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+.page_header_container {
+    padding: 100px 0px 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about_details{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.page_header {
+    display: flex;
+    margin: 0 0 25px 0;
+    align-items: center;
+    padding: 0 15px;
+}
+.about_hero_section {
+    background-color: white !important;
+    margin-top: 99px;
+    overflow: hidden;
+}
+.hero_section {
+    background-color: white;
+    padding: 0 0 100px 0 !important;
+    overflow: hidden;
+}
+.header_title {
+    font-weight: 500;
+    color: var(--phathalo-green)
+}
+.normal_heading {
+    color: var(--phathalo-green);
+    padding: 0;
+}
+
+
+
+/* styling image on the hero section */
+.about-section-image{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.about_hero_image {
+    margin-right: 30px;
+    box-shadow: 30px 30px 3px #edf0f573;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+}
+.home_about_subtext{
+    padding: 10px 0 15px ;
+    overflow: hidden;
+}
+/* adding padding to services container */
+.services_section{
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    overflow:hidden;
+}
+.services-row{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.row,.card{
+    padding: 0 15px;
+    overflow: hidden;
+}
+header.row {
+    padding: 10px 0 ;
+}
+.card{
+    margin: 0 15px;
+    overflow: hidden;
+}
+.cta_text{
+    padding-left: 0;
+}
+/* adding service text color */
+.service_text{
+    color:#333;
+    overflow: hidden;
+}
+.read_more_btn{
+    background-color: var(--btn-background);
+    margin-left: 0;
+    overflow: hidden;
+}
+/* not displaying all the content initially */
+.service_hidden{
+    display: none;
+    overflow: hidden;
+}
+.card{
+    padding: 30px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.card{
+    background-color: #ecf3ed;
+}
+h3{
+    color:var(--phathalo-green);
+}
+.muted-btn{
+    margin-top: 15px;
+}
+/* styling services hr */
+.services-hr{
+    background-color: white;
+    margin: 0;
+}
+.hr-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+.service_subtext{
+    padding: 15px 0;
+}
+/* styling page header */
+.page_header_container {
+    padding: 100px 0px 10px 0
+}
+.page_header {
+    display: flex;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+    align-items: center;
+}
+header {
+    padding: 10px 0;
+}
+.breadcrumb,
+.breadcrumb-item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* styling bread_crumb */
+.header_title {
+    font-weight: bold;
+    color: var(--phathalo-green)
+}
+.review_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.home_reviews_section{
+    padding:0 30px;
+}
+.clinic-timing{
+    padding-bottom: 30px;
+}
+.well{
+    gap:34px;
+    padding:40px 0;
+}
+.clinic-timing{
+    padding-left: 0;
+    padding-right: 0;
+}
+.services_section h2{
+    padding-bottom: 15px;
+}
+footer{
+    padding: 0;
+}
+.footer_logo_section{
+    padding-left: 0;
+}
+.footer_clinic_section{
+    padding-right: 0;
+}
+.site_links ul{
+    padding-left: 15px;
+}
+.muted-text{
+    padding-left: 0 !important;
+}
+.site_links ul{
+    padding-left: 15px !important;
+}
+.carousel-inner{
+    padding: 0 15px;
+}
+.carousel-control-prev{
+    padding-left: 15px;
+}
+@media (max-width:1300px) {
+    .hero_section {
+        padding: 0 0 90px 0 !important;
+    }
+}
+@media (max-width:992px) {
+    .about-section-image{
+        justify-content: center;
+    }
+    .about_hero_image{
+        margin-right: 20px;
+        box-shadow: 20px 20px 3px #edf0f573;
+        width: 270px;
+        height: 359px;
+    }
+    .page_header_container {
+        padding: 70px 0px 10px 0;
+    }
+    .about_details {
+        margin-top: 60px;
+        padding: 0;
+    }
+    .services{
+        padding-left: 0;
+    }
+    .footer_clinic_section .row{
+        padding-left: 0;
+    }
+    .cta_text h2 {
+        padding-right: 15px;
+    }
+    .card h3{
+        font-weight: 600;
+        margin: 0;
+    }
+}
+@media (max-width:768px) {
+    .hero_section{
+        margin: 0;
+    }
+    .page_header_container {
+        padding: 100px 0px 10px 0;
+    }
+    .card h3{
+        font-size: 28px;
+    }
+    .home_reviews_section h2{
+        padding: 0 15px;
+    }
+    .footer_services_section{
+        padding-left: 0;
+    }
+    .footer_links{
+        padding-left: 0;
+    }
+}
+@media (max-width: 576px){
+    .toggle-nav {
+        padding: 0 15px 0 0;
+    }
+    .cta-form{
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    footer div{
+        padding: 0;
+    }
+    .footer_clinic_section{
+        padding-left: 0;
+    }
+    .site_links{
+        padding-left: 0;
+    }
+    .home_reviews_section h2,.home_reviews_section .container,.carousel-inner{
+        padding: 0 !important;
+    }
+    .carousel-control-prev{
+        margin-left: -10px;
+    }
+    .carousel-control-next {
+        margin-right: -10px;
+    }
+}
