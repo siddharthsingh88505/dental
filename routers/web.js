@@ -9,7 +9,7 @@ router.get("/about", SiteController.aboutController);
 router.get("/services", SiteController.servicesController);
 router.get("/contact", SiteController.contactController);
 router.get("/login",SiteController.loginController);
-// router.get("/getdata", SiteController.getData);
+router.get("/getdata", SiteController.getData);
 router.get("/jsontoexcel", SiteController.jsontoexcel);
 // post data
 router.post("/login",SiteController.adminLogin);
