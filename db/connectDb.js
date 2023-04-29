@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 // options for the connection
 const options = {
-    dbName: "admin",
+    dbName: "adminmine",
 }
 
 // helper function for connection
