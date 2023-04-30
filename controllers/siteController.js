@@ -61,18 +61,6 @@ class SiteController {
         }
     }
 
-    // getData
-     static getData = async (req, res) => {
-         connectDb("mongodb://127.0.0.1:27017");
-         const result = await dentalModel.find();
-         res.render("index", {
-             text: result.slice(0, 10),
-             count: result.length,
-             index: 1,
-             id: 1,
-         });
-     }
-
     // addData
     static insertData = async (req, res) => {
         connectDb(process.env.DATABASE_URL);
