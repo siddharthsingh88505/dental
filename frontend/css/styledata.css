@@ -153,4 +153,11 @@ button {
   .title-text{
       padding-left: 3px;
     }
+   
+  .fa-solid, .fas {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 300;
+      background-color: inherit !important;
+      color: white;
+    }
 }
