@@ -118,7 +118,15 @@ button {
 
 
 @media screen and (max-width: 400px) {
-  body {
-    background-color: blue;
-  }
+  .table td, .table th{
+      font-size: 13px;
+    }
+    
+  .table th {
+    font-size: 17px;
+    }
+    
+  .heading {
+    font-size: 20px;
+    }
 }
