@@ -129,4 +129,8 @@ button {
   .heading {
     font-size: 20px;
     }
+    
+  .col-12 {
+    padding: 0 0px;
+    }
 }
