@@ -160,4 +160,8 @@ button {
       background-color: inherit !important;
       color: white;
     }
+    
+  .export-btn {
+      padding: 3px 3px;
+    }
 }
