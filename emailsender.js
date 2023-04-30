@@ -8,8 +8,8 @@ const transporter = nodemailer.createTransport({
 
     // credential 
     auth: {
-        user: "manishsingh05436@gmail.com",
-        pass : "bljyvwuqviyelrwt"
+        user: "siddharthsingh88505@gmail.com",
+        pass : "aryplvhgkfzdnnlb"
     }
 
 });
